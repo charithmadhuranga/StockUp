@@ -50,11 +50,7 @@ export default class NestSetup {
 		const config = new DocumentBuilder()
 			.setTitle('StockedUp API')
 			.setDescription(
-				'Welcome to StockedUp official API reference!\n\nLinks:\n' +
-					'- [API Documentation](https://stockedup.dokurno.dev/dashboard/user/me/developer)\n' +
-					'- [Issues tracker](https://github.com/MrBartusek/stocked-up/issues)\n' +
-					'- [GitHub](https://github.com/MrBartusek/stocked-up)\n' +
-					'- [Postman](https://app.getpostman.com/run-collection/7055992-d02d47d4-a08a-4d91-99c0-1cbe6f5b2ab7?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D7055992-d02d47d4-a08a-4d91-99c0-1cbe6f5b2ab7%26entityType%3Dcollection%26workspaceId%3D264913a4-bcdd-4e43-847c-1e8cbca3334b)',
+				'Welcome to StockedUp official API reference!\n\nLinks:\n'
 			)
 			.setVersion('v1')
 			.addBearerAuth()

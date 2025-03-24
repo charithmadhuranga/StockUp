@@ -46,7 +46,7 @@ function UserInfo() {
 			<DropdownMenu>
 				<UserSettingsDropdownItem />
 				<Link
-					to="https://github.com/MrBartusek/stocked-up/issues"
+					to="http://slengineer.work"
 					target="_blank"
 				>
 					<DropdownItem
