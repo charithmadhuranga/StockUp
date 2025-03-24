@@ -1,0 +1,22 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "globalDotEnv": [
+        ".env"
+    ],
+    "pipeline": {
+        "dev": {
+            "cache": false
+        },
+        "lint": {},
+        "test": {},
+        "lint:fix": {},
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "outputs": [
+                "dist/**"
+            ]
+        }
+    }
+}

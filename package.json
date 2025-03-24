@@ -1,0 +1,27 @@
+{
+    "name": "stocked-up",
+    "version": "1.0.0",
+    "description": "",
+    "author": "MrBartusek",
+    "license": "MIT",
+    "scripts": {
+        "dev": "dotenv -- turbo run dev",
+        "build": "dotenv -- turbo run build",
+        "start": "dotenv -- node apps/api/dist/main",
+        "lint": "turbo run lint",
+        "lint:fix": "turbo run lint:fix",
+        "clean": "turbo daemon clean",
+        "test": "turbo run test"
+    },
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "devDependencies": {
+        "turbo": "^1.10.13"
+    },
+    "dependencies": {
+        "country-code-enum": "^1.0.5",
+        "dotenv-cli": "^7.3.0"
+    }
+}

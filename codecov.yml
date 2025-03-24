@@ -1,0 +1,29 @@
+ignore:
+  - "**/*.module.*"
+  - "**/*initializer.*"
+  - "**/*main.*"
+  - "**/*.repository.*"
+  - "**/*.serializer.*"
+
+  - "**/*.dto.*" # Skip .toDto() functions coverage
+  - "**/*.mock.*" # Mocks are only used in tests, they don't need to be tested twice
+
+  # Hard to test / not possible to test
+  - "**/mongoose-module.helper.ts"
+  - "**/redis/connect.ts"
+  - "**/images.controller.*" # Testing .pipe() in this file is not worth the effort
+  - "**/*.decorator.*"
+
+  # Simple classes mainly constructor only
+  - "**/*.type.*"
+  - "**/resend.factory.*"
+  - "**/redis.factory.ts"
+  - "**/*.exception.*"
+
+coverage:
+  range: 65..80
+  status:
+    project:
+      default:
+        target: 65%
+    patch: off
